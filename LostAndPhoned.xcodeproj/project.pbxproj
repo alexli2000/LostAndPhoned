@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F2F4407636F90B2641ABC3E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EBC6C1231F8532F0068E4F /* libPods.a */; };
 		FAD3B7E81BB793B3000D72E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3B7E71BB793B3000D72E6 /* AppDelegate.swift */; };
 		FAD3B7EA1BB793B3000D72E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3B7E91BB793B3000D72E6 /* ViewController.swift */; };
 		FAD3B7ED1BB793B3000D72E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD3B7EB1BB793B3000D72E6 /* Main.storyboard */; };
@@ -14,6 +15,18 @@
 		FAD3B7F21BB793B3000D72E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD3B7F01BB793B3000D72E6 /* LaunchScreen.storyboard */; };
 		FAD3B7FD1BB793B3000D72E6 /* LostAndPhonedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3B7FC1BB793B3000D72E6 /* LostAndPhonedTests.swift */; };
 		FAD3B8081BB793B3000D72E6 /* LostAndPhonedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3B8071BB793B3000D72E6 /* LostAndPhonedUITests.swift */; };
+		FAD3B8181BB7A072000D72E6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD3B8171BB7A072000D72E6 /* AudioToolbox.framework */; };
+		FAD3B81A1BB7A079000D72E6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD3B8191BB7A079000D72E6 /* CFNetwork.framework */; };
+		FAD3B81C1BB7A080000D72E6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD3B81B1BB7A080000D72E6 /* CoreGraphics.framework */; };
+		FAD3B81E1BB7A087000D72E6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD3B81D1BB7A087000D72E6 /* CoreLocation.framework */; };
+		FAD3B8201BB7A08D000D72E6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD3B81F1BB7A08D000D72E6 /* QuartzCore.framework */; };
+		FAD3B8221BB7A093000D72E6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD3B8211BB7A093000D72E6 /* Security.framework */; };
+		FAD3B8241BB7A09A000D72E6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD3B8231BB7A09A000D72E6 /* StoreKit.framework */; };
+		FAD3B8261BB7A0A4000D72E6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD3B8251BB7A0A4000D72E6 /* SystemConfiguration.framework */; };
+		FAD3B8281BB7A0AE000D72E6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD3B8271BB7A0AE000D72E6 /* libz.tbd */; };
+		FAD3B82A1BB7A0B6000D72E6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD3B8291BB7A0B6000D72E6 /* libsqlite3.tbd */; };
+		FAD3B82E1BB7AE32000D72E6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3B82C1BB7AE32000D72E6 /* HomeViewController.swift */; };
+		FAD3B82F1BB7AE32000D72E6 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD3B82D1BB7AE32000D72E6 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33B93F073B23D18C4768AC81 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		99EBC6C1231F8532F0068E4F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8B50812910B19AFC9D31718 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FAD3B7E41BB793B3000D72E6 /* LostAndPhoned.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostAndPhoned.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD3B7E71BB793B3000D72E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD3B7E91BB793B3000D72E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +63,19 @@
 		FAD3B8031BB793B3000D72E6 /* LostAndPhonedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LostAndPhonedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD3B8071BB793B3000D72E6 /* LostAndPhonedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostAndPhonedUITests.swift; sourceTree = "<group>"; };
 		FAD3B8091BB793B3000D72E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD3B8171BB7A072000D72E6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FAD3B8191BB7A079000D72E6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FAD3B81B1BB7A080000D72E6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FAD3B81D1BB7A087000D72E6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FAD3B81F1BB7A08D000D72E6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FAD3B8211BB7A093000D72E6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FAD3B8231BB7A09A000D72E6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		FAD3B8251BB7A0A4000D72E6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FAD3B8271BB7A0AE000D72E6 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FAD3B8291BB7A0B6000D72E6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FAD3B82B1BB7A0FD000D72E6 /* LostAndPhoned-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LostAndPhoned-Bridging-Header.h"; sourceTree = "<group>"; };
+		FAD3B82C1BB7AE32000D72E6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FAD3B82D1BB7AE32000D72E6 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +83,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD3B82A1BB7A0B6000D72E6 /* libsqlite3.tbd in Frameworks */,
+				FAD3B8281BB7A0AE000D72E6 /* libz.tbd in Frameworks */,
+				FAD3B8261BB7A0A4000D72E6 /* SystemConfiguration.framework in Frameworks */,
+				FAD3B8241BB7A09A000D72E6 /* StoreKit.framework in Frameworks */,
+				FAD3B8221BB7A093000D72E6 /* Security.framework in Frameworks */,
+				FAD3B8201BB7A08D000D72E6 /* QuartzCore.framework in Frameworks */,
+				FAD3B81E1BB7A087000D72E6 /* CoreLocation.framework in Frameworks */,
+				FAD3B81C1BB7A080000D72E6 /* CoreGraphics.framework in Frameworks */,
+				FAD3B81A1BB7A079000D72E6 /* CFNetwork.framework in Frameworks */,
+				FAD3B8181BB7A072000D72E6 /* AudioToolbox.framework in Frameworks */,
+				9F2F4407636F90B2641ABC3E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +114,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		289BC962DCC60D89B3EC3424 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33B93F073B23D18C4768AC81 /* Pods.debug.xcconfig */,
+				B8B50812910B19AFC9D31718 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C14E2819D6282BAB6040324D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAD3B8291BB7A0B6000D72E6 /* libsqlite3.tbd */,
+				FAD3B8271BB7A0AE000D72E6 /* libz.tbd */,
+				FAD3B8251BB7A0A4000D72E6 /* SystemConfiguration.framework */,
+				FAD3B8231BB7A09A000D72E6 /* StoreKit.framework */,
+				FAD3B8211BB7A093000D72E6 /* Security.framework */,
+				FAD3B81F1BB7A08D000D72E6 /* QuartzCore.framework */,
+				FAD3B81D1BB7A087000D72E6 /* CoreLocation.framework */,
+				FAD3B81B1BB7A080000D72E6 /* CoreGraphics.framework */,
+				FAD3B8191BB7A079000D72E6 /* CFNetwork.framework */,
+				FAD3B8171BB7A072000D72E6 /* AudioToolbox.framework */,
+				99EBC6C1231F8532F0068E4F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAD3B7DB1BB793B3000D72E6 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +148,8 @@
 				FAD3B7FB1BB793B3000D72E6 /* LostAndPhonedTests */,
 				FAD3B8061BB793B3000D72E6 /* LostAndPhonedUITests */,
 				FAD3B7E51BB793B3000D72E6 /* Products */,
+				289BC962DCC60D89B3EC3424 /* Pods */,
+				C14E2819D6282BAB6040324D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +167,9 @@
 			isa = PBXGroup;
 			children = (
 				FAD3B7E71BB793B3000D72E6 /* AppDelegate.swift */,
+				FAD3B82C1BB7AE32000D72E6 /* HomeViewController.swift */,
+				FAD3B82D1BB7AE32000D72E6 /* HomeViewController.xib */,
+				FAD3B82B1BB7A0FD000D72E6 /* LostAndPhoned-Bridging-Header.h */,
 				FAD3B7E91BB793B3000D72E6 /* ViewController.swift */,
 				FAD3B7EB1BB793B3000D72E6 /* Main.storyboard */,
 				FAD3B7EE1BB793B3000D72E6 /* Assets.xcassets */,
@@ -132,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAD3B80C1BB793B3000D72E6 /* Build configuration list for PBXNativeTarget "LostAndPhoned" */;
 			buildPhases = (
+				80CA8C5312C5F90D885D750D /* Check Pods Manifest.lock */,
 				FAD3B7E01BB793B3000D72E6 /* Sources */,
 				FAD3B7E11BB793B3000D72E6 /* Frameworks */,
 				FAD3B7E21BB793B3000D72E6 /* Resources */,
+				7852B255E25C97D89A4687C9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +266,7 @@
 				TargetAttributes = {
 					FAD3B7E31BB793B3000D72E6 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 2846644Q3N;
 					};
 					FAD3B7F71BB793B3000D72E6 = {
 						CreatedOnToolsVersion = 7.0;
@@ -231,6 +306,7 @@
 				FAD3B7F21BB793B3000D72E6 /* LaunchScreen.storyboard in Resources */,
 				FAD3B7EF1BB793B3000D72E6 /* Assets.xcassets in Resources */,
 				FAD3B7ED1BB793B3000D72E6 /* Main.storyboard in Resources */,
+				FAD3B82F1BB7AE32000D72E6 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +326,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7852B255E25C97D89A4687C9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80CA8C5312C5F90D885D750D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAD3B7E01BB793B3000D72E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -257,6 +366,7 @@
 			files = (
 				FAD3B7EA1BB793B3000D72E6 /* ViewController.swift in Sources */,
 				FAD3B7E81BB793B3000D72E6 /* AppDelegate.swift in Sources */,
+				FAD3B82E1BB7AE32000D72E6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,23 +506,31 @@
 		};
 		FAD3B80D1BB793B3000D72E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33B93F073B23D18C4768AC81 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LostAndPhoned/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexli.LostAndPhoned;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LostAndPhoned/LostAndPhoned-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		FAD3B80E1BB793B3000D72E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B50812910B19AFC9D31718 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LostAndPhoned/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexli.LostAndPhoned;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LostAndPhoned/LostAndPhoned-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -483,6 +601,7 @@
 				FAD3B80E1BB793B3000D72E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAD3B80F1BB793B3000D72E6 /* Build configuration list for PBXNativeTarget "LostAndPhonedTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +610,7 @@
 				FAD3B8111BB793B3000D72E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAD3B8121BB793B3000D72E6 /* Build configuration list for PBXNativeTarget "LostAndPhonedUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +619,7 @@
 				FAD3B8141BB793B3000D72E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

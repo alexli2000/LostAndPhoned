@@ -1,25 +1,82 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login View Controller" id="BYZ-38-t0r" customClass="ViewController" customModule="LostAndPhoned" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Il-Xv-y5a">
+                                <rect key="frame" x="141" y="175" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pPc-tA-AJo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNg-lP-tFT">
+                                <rect key="frame" x="133" y="225" width="55" height="30"/>
+                                <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="signupButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yox-UX-79B"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="5 digit password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SBn-DU-xeR">
+                                <rect key="frame" x="60" y="125" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="82h-Sn-rSa"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="5 digit id" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cYD-am-0Ic">
+                                <rect key="frame" x="60" y="69" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="gfe-9m-AhQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wiY-4y-Tg0"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372549999996" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hNg-lP-tFT" firstAttribute="top" secondItem="7Il-Xv-y5a" secondAttribute="bottom" constant="20" id="Jd8-HJ-Ile"/>
+                            <constraint firstItem="SBn-DU-xeR" firstAttribute="width" secondItem="cYD-am-0Ic" secondAttribute="width" id="NaT-UY-ZQL"/>
+                            <constraint firstItem="7Il-Xv-y5a" firstAttribute="top" secondItem="SBn-DU-xeR" secondAttribute="bottom" constant="20" id="Utk-di-ta9"/>
+                            <constraint firstItem="hNg-lP-tFT" firstAttribute="centerX" secondItem="7Il-Xv-y5a" secondAttribute="centerX" id="baV-iw-hp3"/>
+                            <constraint firstItem="SBn-DU-xeR" firstAttribute="centerX" secondItem="cYD-am-0Ic" secondAttribute="centerX" id="gm3-3g-RRG"/>
+                            <constraint firstItem="7Il-Xv-y5a" firstAttribute="centerX" secondItem="SBn-DU-xeR" secondAttribute="centerX" id="iaG-Lb-8h0"/>
+                            <constraint firstItem="SBn-DU-xeR" firstAttribute="top" secondItem="cYD-am-0Ic" secondAttribute="bottom" constant="26" id="mKN-x5-q63"/>
+                            <constraint firstItem="cYD-am-0Ic" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="s5i-eB-NyW"/>
+                            <constraint firstItem="cYD-am-0Ic" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y0X-zD-xf4"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="7y6-Ky-dJS"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="loginButton" destination="7Il-Xv-y5a" id="9A4-CQ-jhN"/>
+                        <outlet property="loginTextField" destination="cYD-am-0Ic" id="lR9-7G-zBv"/>
+                        <outlet property="passwordTextField" destination="SBn-DU-xeR" id="VOt-pe-QoR"/>
+                        <outlet property="signUpButton" destination="hNg-lP-tFT" id="CjV-Em-j8N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1148" y="313"/>
         </scene>
     </scenes>
 </document>

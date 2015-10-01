@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9052" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="LostAndPhoned" customModuleProvider="target">
+            <connections>
+                <outlet property="lastRetrievedLabel" destination="Gmj-gl-cIX" id="I6r-TZ-4pH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Last Location sent at:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmj-gl-cIX">
+                    <rect key="frame" x="0.0" y="150" width="320" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6c-mb-X46">
+                    <rect key="frame" x="118" y="178" width="84" height="30"/>
+                    <state key="normal" title="See On Map">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mkj-u6-B5m">
+                    <rect key="frame" x="81" y="530" width="158" height="30"/>
+                    <state key="normal" title="Save 1-848-999-3399">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="testPhoneNumberButtonTapped:" destination="-1" eventType="touchUpInside" id="JRY-PR-UWc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.98431372549999996" green="0.22352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="tintColor" red="0.28235294119999998" green="0.72549019609999998" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="s6c-mb-X46" firstAttribute="centerX" secondItem="Gmj-gl-cIX" secondAttribute="centerX" id="Byw-p4-uRn"/>
+                <constraint firstItem="s6c-mb-X46" firstAttribute="top" secondItem="Gmj-gl-cIX" secondAttribute="bottom" constant="7.5" id="DdW-TP-da8"/>
+                <constraint firstItem="Gmj-gl-cIX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="N5C-yX-UMw"/>
+                <constraint firstItem="Gmj-gl-cIX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="NCW-vA-T7o"/>
+                <constraint firstAttribute="bottom" secondItem="Mkj-u6-B5m" secondAttribute="bottom" constant="8" id="djd-qe-Cbi"/>
+                <constraint firstItem="Gmj-gl-cIX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="erD-r4-dqK"/>
+                <constraint firstItem="Mkj-u6-B5m" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sGD-1g-y36"/>
+                <constraint firstItem="Gmj-gl-cIX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="zgP-fU-mcn"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="zgP-fU-mcn"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
